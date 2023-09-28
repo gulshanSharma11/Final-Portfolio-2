@@ -104,11 +104,12 @@
   .contact_us_2 .text-blk.contactus-head {
     font-size: 36px;
     line-height: 50px;
+    color: hsl(182, 100%, 35%);
     font-weight: 900;
   }
   
   .contact_us_2 .text-blk.contactus-subhead {
-    color: #9c9c9c;
+    color: #696969;
     margin-top: 0px;
     margin-right: 0px;
     margin-bottom: 50px;
@@ -264,7 +265,7 @@
     margin-right: 0px;
     margin-bottom: 5px;
     margin-left: 0px;
-    color: #9c9c9c;
+    color:  hsl(182, 100%, 35%);
   }
   
   .contact_us_2 ::placeholder {

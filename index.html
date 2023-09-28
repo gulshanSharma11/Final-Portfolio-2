@@ -823,7 +823,7 @@
       <div class="blueBG">
       </div>
       <div class="responsive-container-block container">
-        <form class="form-box">
+        <form class="form-box" id="contactForm">
           <div class="container-block form-wrapper">
             <p class="text-blk contactus-head">
               Get in Touch
@@ -831,39 +831,40 @@
             <p class="text-blk contactus-subhead">
               Fill the Require details.
             </p>
+            <div class="alert">Your message sent</div>
             <div class="responsive-container-block">
               <div class="responsive-cell-block wk-ipadp-6 wk-tab-12 wk-mobile-12 wk-desk-6" id="i10mt">
                 <p class="text-blk input-title">
                   FIRST NAME
                 </p>
-                <input class="input" id="ijowk" name="FirstName" placeholder="Please enter first name...">
+                <input class="input" id="first" name="FirstName" placeholder="Please enter first name...">
               </div>
               <div class="responsive-cell-block wk-desk-6 wk-ipadp-6 wk-tab-12 wk-mobile-12">
                 <p class="text-blk input-title">
                   LAST NAME
                 </p>
-                <input class="input" id="indfi" name="Last Name" placeholder="Please enter last name...">
+                <input class="input" id="second" name="Last Name" placeholder="Please enter last name...">
               </div>
               <div class="responsive-cell-block wk-desk-6 wk-ipadp-6 wk-tab-12 wk-mobile-12">
                 <p class="text-blk input-title">
                   EMAIL
                 </p>
-                <input class="input" id="ipmgh" name="Email" placeholder="Please enter email...">
+                <input class="input" id="mail" name="Email" placeholder="Please enter email...">
               </div>
               <div class="responsive-cell-block wk-desk-6 wk-ipadp-6 wk-tab-12 wk-mobile-12">
                 <p class="text-blk input-title">
                   PHONE NUMBER
                 </p>
-                <input class="input" id="imgis" name="PhoneNumber" placeholder="Please enter phone number...">
+                <input class="input" id="contact" name="PhoneNumber" placeholder="Please enter phone number...">
               </div>
               <div class="responsive-cell-block wk-tab-12 wk-mobile-12 wk-desk-12 wk-ipadp-12" id="i634i">
                 <p class="text-blk input-title">
                   WHAT DO YOU HAVE IN MIND
                 </p>
-                <textarea class="textinput" id="i5vyy" placeholder="Please enter query..."></textarea>
+                <textarea class="textinput" id="content" placeholder="Please enter query..."></textarea>
               </div>
             </div>
-            <button class="submit-btn">
+            <button class="submit-btn" type="submit">
               Submit
             </button>
           </div>
@@ -884,6 +885,8 @@
         </form>
       </div>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+    <script src="./assets/js/firebase.js"></script>
     <link rel="stylesheet" href="./assets/css/contact.css">
   </div>
 
@@ -1187,6 +1190,7 @@ z"
 
   
   <script src="./assets/js/script.js"></script>
+  
 
   
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>

@@ -59,3 +59,21 @@ const revealElementOnScroll = function () {
 window.addEventListener("scroll", revealElementOnScroll);
 
 window.addEventListener("load", revealElementOnScroll);
+
+
+// ==================== card text=============
+function toggleText(element) {
+  var parent = element.parentElement;
+  parent.classList.toggle('expanded');
+
+  var extraText = parent.querySelector('.extra-text');
+  var moreText = parent.querySelector('.more-text');
+
+  if (parent.classList.contains('expanded')) {
+    extraText.style.display = "inline";
+    moreText.style.display = "none";
+  } else {
+    extraText.style.display = "none";
+    moreText.style.display = "inline";
+  }
+}

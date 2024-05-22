@@ -677,7 +677,56 @@
     color: var(--white);
   } 
   
+
+
+
+  .card-icons {
+    display: flex;
+    flex-direction: row;
+    gap: 10px; /* Adjust the gap between the icons as needed */
+    align-items: center; /* Align icons vertically in the center */
+}
+
+
+/* =============================== card-text============ */
+
+.blog-card {
+  background-size: cover;
+  background-position: center;
+  transition: background-size 1s ease;
+}
+
+.card-text {
+  position: relative;
+  overflow: hidden;
+}
+
+.card-text .extra-text {
+  display: none;
+}
+
+.card-text .read-more {
+ 
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.card-text.expanded .extra-text {
+  display: inline;
+}
+
+.card-text.expanded .read-more::before {
+  content: 'Read less';
+}
+
+.card-text .read-more::before {
+  content: 'Read more';
+}
+
+
+
   
+/* =======================card text======================== */
   
   
   

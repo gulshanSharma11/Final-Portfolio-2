@@ -677,6 +677,7 @@
     color: var(--white);
   } 
   
+  
 
 
 
@@ -1123,3 +1124,22 @@
     .contact-item { margin-block-start: 0; }
   
   }
+
+
+
+  /* project toggle button */
+
+  .hidden {
+    display: none;
+}
+
+#toggleButton {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#data {
+    margin-top: 20px;
+    font-size: 18px;
+}

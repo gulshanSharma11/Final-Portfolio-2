@@ -77,3 +77,14 @@ function toggleText(element) {
     moreText.style.display = "inline";
   }
 }
+
+document.getElementById('toggleButton').addEventListener('click', function() {
+  var dataDiv = document.getElementById('data');
+  if (dataDiv.classList.contains('hidden')) {
+      dataDiv.classList.remove('hidden');
+      this.textContent = 'Hide Data';
+  } else {
+      dataDiv.classList.add('hidden');
+      this.textContent = 'Show Data';
+  }
+});
